@@ -23,6 +23,8 @@ Quizzler marks a second significant milestone in the Full Stack Revision Series,
 ![image](https://github.com/nkthehustler/FSR-02.-Quizzler-The-Quiz-App/assets/66864065/90bb3054-03de-4715-96f4-ce33ce3fe8c3)
 ![image](https://github.com/nkthehustler/FSR-02.-Quizzler-The-Quiz-App/assets/66864065/be50698e-cccf-4c4d-ada0-80778280a89a)
 
-## Deployed On: https://app-quizzler.netlify.app/
+## Designed on: https://lnkd.in/dA4Q8aNe
+## Deployed on: https://lnkd.in/dc3BxZET
+## Documented on: https://lnkd.in/dPGGWu2T
 
 # Made with ❤ By nkthehustler
