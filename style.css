@@ -1,0 +1,316 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Quicksand', sans-serif;
+}
+
+
+.home-body {
+	width: 100%;
+	height: 100vh;
+	background-image: url(/Images/Home.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.hero {
+	display: flex;
+	align-items: flex-start;
+	flex-direction: column;
+	position: absolute;
+	top: 45%;
+	left: 65%;
+	transform: translate(-50%, -50%);
+}
+
+.hero-text {
+	font-size: 70px;
+	font-weight: 800;
+	cursor: pointer;
+}
+
+.captial-q {
+	font-size: 120px;
+	font-weight: 600;
+}
+
+.hero p {
+	font-size: 18px;
+	font-weight: 600;
+	padding-left: 120px;
+	cursor: pointer;
+}
+
+.slogan {
+	display: flex;
+	align-items: center;
+	transition: 0.1s;
+}
+
+.slogan:hover,
+a i {
+	transform: translateY(-2px);
+}
+
+.slogan,
+a {
+	color: black;
+	text-decoration: none;
+}
+
+.bi {
+	font-size: 24px;
+	margin-left: 5px;
+	cursor: pointer;
+}
+
+
+/* -------------------------------------------------Quiz Page CSS ------------------------------------------------------ */
+
+.quiz-body {
+	width: 100%;
+	height: 100vh;
+	background-image: url(/Images/Quiz.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: bottom;
+}
+
+.app {
+	top: 10%;
+	width: 90%;
+	max-width: 600px;
+	margin: 0 auto 0;
+	border-radius: 10px;
+	padding: 90px 30px 30px 30px;
+}
+
+.app h1 {
+	font-size: 30px;
+	font-weight: 600;
+	text-align: center;
+	color: white;
+	padding-bottom: 10px;
+
+}
+
+.quiz {
+	text-align: center;
+	color: white;
+	padding: 20px 0;
+}
+
+.quiz h2 {
+	font-size: 20px;
+	font-weight: 600;
+	display: inline-block;
+	padding-bottom: 30px;
+	border-bottom: 1px solid white;
+	border-width: 1px;
+}
+
+.btn {
+	background: white;
+	color: black;
+	font-weight: 600;
+	font-size: 16px;
+	width: 100%;
+	border: none;
+	border-radius: 4px;
+	text-align: left;
+	cursor: pointer;
+	padding: 15px;
+	margin: 5px 0;
+	transition: all 0.1s;
+}
+
+.btn .bi {
+	margin-right: 30px;
+	font-size: 20px;
+}
+
+.correct-bi {
+	color: green;
+}
+
+.incorrect-bi {
+	color: red;
+}
+
+.btn:hover:not([disabled]) {
+	background: rgb(71, 0, 194);
+	color: white;
+}
+
+.btn:disabled {
+	cursor: no-drop;
+}
+
+#next-button {
+	background: rgb(157, 101, 255);
+	color: whitesmoke;
+	font-weight: 400;
+	font-size: 20px;
+	width: 150px;
+	height: 50px;
+	border: 0;
+	padding: 10px;
+	margin: 20px auto 0;
+	border-radius: 4px;
+	cursor: pointer;
+	display: none;
+}
+
+#next-button:hover {
+	background: rgb(71, 0, 194);
+}
+
+.correct {
+	background: rgb(109, 255, 168);
+
+}
+
+.incorrect {
+	background: rgb(255, 136, 136);
+}
+
+
+/* ----------------------------------------------------------Score Page CSS ------------------------------------------- */
+
+.score-body {
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	background-image: url(/Images/Score.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: bottom;
+}
+
+
+.score-board {
+	top: 50%;
+	left: 50%;
+	position: absolute;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	width: 90%;
+	max-width: 600px;
+	border-radius: 10px;
+	padding: 20px 30px 30px 30px;
+}
+
+#score {
+	padding: 30px 0;
+	font-weight: 600;
+	color: whitesmoke;
+	font-size: 200px;
+}
+
+.score-board a:hover {
+	transform: translateY(-2px);
+}
+
+
+/* ----------------------------------------------footer----------------------------------------------------------- */
+
+.footer {
+	position: absolute;
+	top: 95%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 12px;
+	font-weight: 600;
+	color: white;
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	cursor: pointer;
+}
+
+.footer-link {
+	color: aliceblue;
+	font-weight: 800;
+	font-size: 12px;
+}
+
+/* ------------------------------------------------Media Quaries to make responsive----------------------------------------- */
+
+@media (max-width: 500px) {
+
+	.hero-text {
+		font-size: 8vw;
+	}
+
+	.captial-q {
+		font-size: 12vw;
+	}
+
+	.hero p {
+		font-size: 4vw;
+		padding-left: 24vw;
+	}
+
+	.bi {
+		font-size: 4vw;
+		margin-left: 1vw;
+	}
+
+
+	.home-body {
+		background-image: url(/Images/SM-Home.jpg);
+	}
+
+	.quiz-body {
+		background-image: url(/Images/SM-Quiz.jpg);
+	}
+
+	.score-body {
+		background-image: url(/Images/SM-Score.jpg);
+	}
+
+	.hero {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		top: 50%;
+		left: 50%;
+		position: absolute;
+		transform: translate(-50%, -50%);
+	}
+
+	.hero-text {
+		font-size: 70px;
+	}
+
+	.captial-q {
+		font-size: 100px;
+	}
+
+	.slogan p {
+		font-size: 16px;
+	}
+
+	.slogan i {
+
+		font-size: 20px;
+	}
+
+	#score {
+		padding: 30px 0;
+		font-weight: 600;
+		color: whitesmoke;
+		font-size: 100px;
+	}
+
+	.footer, .footer-link {
+		font-size: 9px;
+	}
+
+}

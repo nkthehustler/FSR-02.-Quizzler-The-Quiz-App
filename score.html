@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/Images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Score</title>
+</head>
+
+<body class="score-body">
+    <div class="score-board">
+        <h3>Bravo! You Have Scored</h3>
+        <h1 id="score">0/0</h1>
+        <a href="/quiz.html">
+            <h3>Wanna Play Again?</h3>
+        </a>
+    </div>
+    
+    <div class="footer">
+        <p class="des-dev">Designed and Developed By <a class="footer-link" href="https://www.linkedin.com/in/nkthehustler/">Nitin Kumar</a></p>
+     </div>
+
+    <script>
+        // Get the score and total questions from the query parameters
+        const urlParams = new URLSearchParams(window.location.search);
+        const score = urlParams.get('score');
+        const totalQuestions = urlParams.get('total');
+
+        // Display the score
+        if (score !== null && totalQuestions !== null) {
+            document.getElementById('score').textContent = `${score}/${totalQuestions}`;
+        } else {
+            document.getElementById('score').textContent = '0/0';
+        }
+    </script>
+</body>
+
+</html>
